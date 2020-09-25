@@ -1,0 +1,21 @@
+{
+    "name": "waljqiang/signature",
+    "description": "php signature with defuse/php-encryption",
+    "type": "library",
+    "require": {
+        "defuse/php-encryption": "^2.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "waljqiang",
+            "email": "waljqiang@163.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Waljqiang\\Signature\\": "src/"
+        } 
+    }
+}

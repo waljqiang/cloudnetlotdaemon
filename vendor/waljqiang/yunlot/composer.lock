@@ -1,0 +1,57 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "2631660a450d622ac7b9a8bc6dfa2698",
+    "packages": [
+        {
+            "name": "waljqiang/encode",
+            "version": "5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/waljqiang/encode.git",
+                "reference": "7e4895338babbc187fb92e2b9db4a6893b279e7e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/waljqiang/encode/zipball/7e4895338babbc187fb92e2b9db4a6893b279e7e",
+                "reference": "7e4895338babbc187fb92e2b9db4a6893b279e7e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Waljqiang\\Encode\\": "src/",
+                    "Encode\\": "src/Class"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "waljqiang",
+                    "email": "waljqiang@163.com"
+                }
+            ],
+            "description": "php encode",
+            "time": "2020-05-21T02:08:46+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.4"
+    },
+    "platform-dev": []
+}
