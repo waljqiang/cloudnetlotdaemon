@@ -13,7 +13,7 @@ return [
 		'log_name' => env('LOG_NAME','cloudnetlotdaemon'),
 
 		'file' => [
-			'log_max_files' => env('FILE_LOG_MAX',15),
+			'log_max_files' => env('FILE_LOG_MAX',5),
 			'efficiency_monitor_enable' => env('EFF_MONITOR_ENABLE',FALSE)
 		],
 

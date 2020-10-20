@@ -64,6 +64,7 @@ class MqttService extends BaseService{
 				if($toUid != $device["user_id"]){//从新绑定设备,需要清除注册缓存
 					$this->cacheService->delRegister($prtid,$mac);
 				}
+				$this->cacheService->setDeviceDynamic($mac,["status" => config("device.status.online")]);
 				foreach($data as $key => $value){
 					logger("Start handle {$key} data of the device[" . $mac . "]",DEBUG);
 					switch ($key) {

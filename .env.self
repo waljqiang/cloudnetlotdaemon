@@ -8,7 +8,7 @@ SERVER_NAME=cloudnetlotdaemon
 ##LOG
 #node的名字，每一个都必须不一样
 LOG_NAME=cloudnetlotdaemon
-LOG_LEVEL=DEBUG
+LOG_LEVEL=ERROR
 
 
 ##PORT
