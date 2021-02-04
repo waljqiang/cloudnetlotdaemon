@@ -95,6 +95,16 @@ class CacheService extends BaseService{
 
 	public function getDeviceDynamic($mac){
 		$data = $this->redis->hgetall($this->prefix . self::DEVICE_DYNAMIC . $mac);
+		if(empty($data)){
+			$this->setDeviceDynamic($mac,[
+				"cpu_use" => "0",
+				"memory_use" => "0",
+				"runtime" => "0",
+				"status" => "0",
+				"link" => "-1",
+				"rssi" => "-1"
+			]);
+		}
 		return !empty($data) && isset($data["status"]) && $data["status"] == config("device.status.online") ? $data : ["cpu_use" => "0","memory_use" => "0","runtime" => "0","status" => "0","link" => "-1","rssi" => "-1"];
 	}
 
@@ -105,6 +115,7 @@ class CacheService extends BaseService{
 
 	public function getDevicesDynamic($macs){
 		$res = [];
+		$initMacs = [];
 		if(!empty($macs)){
 			$results = $this->redis->pipeline(function($pipe)use($macs){
 				foreach ($macs as $mac) {
@@ -112,7 +123,20 @@ class CacheService extends BaseService{
 				}
 			});
 			foreach ($macs as $key => $mac) {
+				if(empty($results[$key])){
+					$initMacs[] = $mac;
+				}
 				$res[$mac] = !empty($results[$key]) && $results[$key]["status"] == config("device.status.online") ? $results[$key] : ["cpu_use" => "0","memory_use" => "0","runtime" => "0","status" => "0","link" => "-1","rssi" => "-1"];
+			}
+			if(!empty($initMacs)){
+				$this->setDevicesDynamic($initMacs,[
+					"cpu_use" => "0",
+					"memory_use" => "0",
+					"runtime" => "0",
+					"status" => "0",
+					"link" => "-1",
+					"rssi" => "-1"
+				]);
 			}
 		}
 		return $res;
