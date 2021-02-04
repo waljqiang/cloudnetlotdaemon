@@ -339,7 +339,7 @@ function secho($tile, $message)
 
 function setTimezone()
 {
-    date_default_timezone_set('Asia/Shanghai');
+    date_default_timezone_set('UTC');
 }
 
 function format_date($time)

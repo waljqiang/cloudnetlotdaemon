@@ -19,7 +19,7 @@ class TestService extends BaseService{
 	}
 
 	public function testMysql(){
-		$mac = "44:D1:FA:08:B9:F5";
+		/*$mac = "44:D1:FA:08:B9:F5";
 		$data = [
 			"name" => "123",
 			"version" => "123",
@@ -74,7 +74,18 @@ class TestService extends BaseService{
 				}
 			});
 			echo $rs;
-		}
+		}*/
+		$this->db->begin(function(){
+			$rs1 = $this->deviceModel->add(["name" => mt_rand(1,10000)],false,"test");
+			$rs2 = false;
+			if(!$rs1 || !$rs2){
+				throw new \Exception("mysql exec failure",-1);
+			}
+		},function($a,$e){
+			var_dump($a);
+			var_dump($e->getMessage());
+		});
+		return 11;
 	}
 
 	public function upinfo(){

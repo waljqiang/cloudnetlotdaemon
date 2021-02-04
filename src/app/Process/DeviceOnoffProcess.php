@@ -12,6 +12,7 @@ use Server\Components\Process\Process;
 use Server\CoreBase\Child;
 use Server\Memory\Pool;
 use App\Services\CacheService;
+use Carbon\Carbon;
 /**
 * Class DeviceUpReceiveProcess
 * @package app\Process
@@ -70,9 +71,9 @@ class DeviceOnoffProcess extends Process{
 					list($userID,$productID,$mac) = decodeCltID($message->clientid);
 					$action = substr($topic,strripos($topic,"/")+1);
 					if($action == "connected" && $message->connack == 0){//上线
-						$this->cacheService->setDeviceDynamic($mac,["status" => config("device.status.online")]);
+						$this->cacheService->parseStatus($mac,["status" => config("device.status.online")]);
 					}elseif($action == "disconnected"){//下线
-						$this->cacheService->setDeviceDynamic($mac,["cpu_use" => "0","memory_use" => "0","runtime" => "0","status" => config("device.status.offline")]);
+						$this->cacheService->parseStatus($mac,["status" => config("device.status.offline")]);
 					}else{
 
 					}

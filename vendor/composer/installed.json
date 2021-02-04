@@ -885,17 +885,17 @@
     },
     {
         "name": "monolog/monolog",
-        "version": "1.25.2",
-        "version_normalized": "1.25.2.0",
+        "version": "1.26.0",
+        "version_normalized": "1.26.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/Seldaek/monolog.git",
-            "reference": "d5e2fb341cb44f7e2ab639d12a1e5901091ec287"
+            "reference": "2209ddd84e7ef1256b7af205d0717fb62cfc9c33"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/Seldaek/monolog/zipball/d5e2fb341cb44f7e2ab639d12a1e5901091ec287",
-            "reference": "d5e2fb341cb44f7e2ab639d12a1e5901091ec287",
+            "url": "https://api.github.com/repos/Seldaek/monolog/zipball/2209ddd84e7ef1256b7af205d0717fb62cfc9c33",
+            "reference": "2209ddd84e7ef1256b7af205d0717fb62cfc9c33",
             "shasum": ""
         },
         "require": {
@@ -909,11 +909,10 @@
             "aws/aws-sdk-php": "^2.4.9 || ^3.0",
             "doctrine/couchdb": "~1.0@dev",
             "graylog2/gelf-php": "~1.0",
-            "jakub-onderka/php-parallel-lint": "0.9",
             "php-amqplib/php-amqplib": "~2.4",
             "php-console/php-console": "^3.1.3",
+            "phpstan/phpstan": "^0.12.59",
             "phpunit/phpunit": "~4.5",
-            "phpunit/phpunit-mock-objects": "2.3.0",
             "ruflin/elastica": ">=0.90 <3.0",
             "sentry/sentry": "^0.13",
             "swiftmailer/swiftmailer": "^5.3|^6.0"
@@ -931,13 +930,8 @@
             "ruflin/elastica": "Allow sending log messages to an Elastic Search server",
             "sentry/sentry": "Allow sending log messages to a Sentry server"
         },
-        "time": "2019-11-13T10:00:05+00:00",
+        "time": "2020-12-14T12:56:38+00:00",
         "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "2.0.x-dev"
-            }
-        },
         "installation-source": "dist",
         "autoload": {
             "psr-4": {
@@ -1429,23 +1423,23 @@
     },
     {
         "name": "psr/log",
-        "version": "1.1.2",
-        "version_normalized": "1.1.2.0",
+        "version": "1.1.3",
+        "version_normalized": "1.1.3.0",
         "source": {
             "type": "git",
             "url": "https://github.com/php-fig/log.git",
-            "reference": "446d54b4cb6bf489fc9d75f55843658e6f25d801"
+            "reference": "0f73288fd15629204f9d42b7055f72dacbe811fc"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/php-fig/log/zipball/446d54b4cb6bf489fc9d75f55843658e6f25d801",
-            "reference": "446d54b4cb6bf489fc9d75f55843658e6f25d801",
+            "url": "https://api.github.com/repos/php-fig/log/zipball/0f73288fd15629204f9d42b7055f72dacbe811fc",
+            "reference": "0f73288fd15629204f9d42b7055f72dacbe811fc",
             "shasum": ""
         },
         "require": {
             "php": ">=5.3.0"
         },
-        "time": "2019-11-01T11:05:21+00:00",
+        "time": "2020-03-23T09:12:05+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1567,6 +1561,45 @@
             }
         ],
         "description": "A polyfill for getallheaders."
+    },
+    {
+        "name": "sskaje/mqtt",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sskaje/mqtt.git",
+            "reference": "78d1a97ffb8cd1332f6737d96806f20d64efe97f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/sskaje/mqtt/zipball/78d1a97ffb8cd1332f6737d96806f20d64efe97f",
+            "reference": "78d1a97ffb8cd1332f6737d96806f20d64efe97f",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2019-07-18T05:00:50+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "sskaje\\mqtt\\": "mqtt"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "sskaje",
+                "email": "sskaje@gmail.com",
+                "homepage": "https://sskaje.me"
+            }
+        ],
+        "description": "sskaje's MQTT Class"
     },
     {
         "name": "symfony/console",
@@ -2722,23 +2755,23 @@
     },
     {
         "name": "waljqiang/mqtt",
-        "version": "3.1",
-        "version_normalized": "3.1.0.0",
+        "version": "1.4",
+        "version_normalized": "1.4.0.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/waljqiang/mqtt.git",
-            "reference": "e1a91fb65b855b912750f2118f36b05ff26756eb"
+            "url": "https://github.com/waljqiang/emqtt.git",
+            "reference": "61d074d3a22608454d1ce8ef205acbaea92e1f15"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/waljqiang/mqtt/zipball/e1a91fb65b855b912750f2118f36b05ff26756eb",
-            "reference": "e1a91fb65b855b912750f2118f36b05ff26756eb",
+            "url": "https://api.github.com/repos/waljqiang/emqtt/zipball/61d074d3a22608454d1ce8ef205acbaea92e1f15",
+            "reference": "61d074d3a22608454d1ce8ef205acbaea92e1f15",
             "shasum": ""
         },
         "require": {
-            "monolog/monolog": "^1.24.0"
+            "sskaje/mqtt": "dev-master"
         },
-        "time": "2019-09-26T08:59:43+00:00",
+        "time": "2020-01-06T08:36:44+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {

@@ -34,6 +34,10 @@ class ComposerStaticInitadd36af66f9943fe3a7fe478d77f1d0d
         array (
             'test\\' => 5,
         ),
+        's' => 
+        array (
+            'sskaje\\mqtt\\' => 12,
+        ),
         'a' => 
         array (
             'app\\' => 4,
@@ -137,6 +141,10 @@ class ComposerStaticInitadd36af66f9943fe3a7fe478d77f1d0d
         array (
             0 => __DIR__ . '/../..' . '/src/test',
             1 => __DIR__ . '/..' . '/tmtbe/swooledistributed/src/test',
+        ),
+        'sskaje\\mqtt\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sskaje/mqtt/mqtt',
         ),
         'app\\' => 
         array (

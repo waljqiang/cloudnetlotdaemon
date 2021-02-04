@@ -348,6 +348,65 @@ $this->log('123',DEBUG);
 |SERVER_MAX_CONNECTION||1000000|
 |SERVER_COROUTION_TIMEOUT||5000|
 
+#关于License
+
+对于自建环境，会进行license认证。需要将有效的license文件license.txt放入代码的根目录下。license.txt的生成请使用cloudnetlot项目下的接口生成。
+
+1、生成license接口说明
+
+* 请求地址
+
+    {{host}}/cloudnetlot/backend/license/generate
+
+* 请求方式
+
+    POST
+
+* 请求头
+
+    | 字段| 类型| 必填 | 默认值 | 备注 |
+    |:---:|:---:|:---:|:---:|:---:|
+    |Content-Type|string|是|application/json||
+
+* 请求参数
+
+    | 字段 | 类型 | 必填 | 默认值 | 备注 |
+    |:---:|:---:|:---:|:---:|:---:|
+    |company|string|是||公司名称|
+    |domain|array|是||允许访问的地址|
+    |expire_in|int|是||过期时间，单位天|
+
+* 入参示例
+
+    ```
+    {
+        "company":"小小公司",
+        "domain":["192.168.33.11"],
+        "expire_in":500
+    }
+    ```
+
+* 返回参数
+
+    | 字段 | 类型 | 必填 | 默认值 | 备注 |
+    |:---:|:---:|:---:|:---:|:---:|
+    |status|int|是||接口返回码|
+    |data|object|是||接口返回数据|
+    |data.file|string|否||license文件地址|
+    |errorCode|array|是||接口错误码|
+
+* 返回参数示例
+
+    ```
+    {
+        "status": 10000,
+        "data": {
+            "file": "/vagrant/cloudnetlot/backend/storage/app/public/license.txt"
+        },
+        "errorCode": []
+    }
+    ```
+
 #使用要求
 * http请求方法使用http_前缀
 * tcp请求方法使用tcp_前缀

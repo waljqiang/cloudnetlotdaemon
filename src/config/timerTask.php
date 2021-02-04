@@ -8,6 +8,13 @@ return [
             'interval_time' => '86400',
             'delay' => false
         ],
+        [
+            'start_time' => 'Y-m-d 23:59:59',
+            'task_name' => 'StaticsTask',
+            'method_name' => 'ClientsForDeviceByHours',
+            'interval_time' => '86400',
+            'delay' => true
+        ],
         //下面例子表示在每天的14点到20点间每隔1秒执行一次
         /*[
             //'start_time' => 'Y-m-d 14:00:00',

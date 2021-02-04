@@ -1,13 +1,14 @@
 {
+	"minimum-stability":"dev",
 	"require": {
 		"tmtbe/swooledistributed": "~3.6.0",
 		"hassankhan/config": "1.1.0",
 		"vlucas/phpdotenv": "^3.3",
 		"waljqiang/signature": "^1.2",
 		"guzzlehttp/guzzle": "^6.5",
-		"waljqiang/mqtt": "^3.1",
 		"hashids/hashids": "^2.0",
-		"waljqiang/yunlot": "^7.2"
+		"waljqiang/yunlot": "^7.2",
+		"waljqiang/mqtt": "^1.0"
 	},
 	"autoload": {
 		"psr-4": {

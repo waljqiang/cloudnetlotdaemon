@@ -1,4 +1,5 @@
 <?php
+use Carbon\Carbon;
 
 function config($key,$value=""){
 	return get_instance()->config->get($key,$value);
@@ -47,13 +48,48 @@ function getRandomStr($length = 16){
 	return $str;
 }
 
-function mqttSend($topic, $content,$puback = null, $qos = 0, $retain = 0){
-	$mqttClient = get_instance()->getAsynPool("mqttClientPool");
-	$mqttClient->connect("devicedown". uniqid());
-    $mqttClient->publish($topic,$content,$puback,$qos,$retain);
-    $mqttClient->close();
+//根据时间戳、时区、夏令时将时间转换为相应的时区时间gmdate
+function convUnixToZoneGm($timestamp,$timeZone,$summerTime){
+    return Carbon::createFromFormat("Y-m-d H:i:s",date('Y-m-d H:i:s',$timestamp))->addMinutes($timeZone * 60)->addMinutes
+    ($summerTime * 60)->toDateTimeString();
 }
 
+//根据时间、时区、夏令时将时间转换为相应的时区时间gmdate
+function convDateToZoneGm($date,$timeZone,$summerTime){
+    return Carbon::createFromFormat("Y-m-d H:i:s",$date)->addMinutes($timeZone * 60)->addMinutes($summerTime * 60)->toDateTimeString();
+}
+
+//mac地址添加冒号
+function setMac($mac){
+    return substr($mac, 0, 2) . ':' . substr($mac, 2, 2) . ':' . substr($mac, 4, 2) . ':' . substr($mac, 6, 2) . ':' . substr($mac, 8, 2) . ':' . substr($mac, 10, 2);
+}
+
+//mac地址去除冒号
+function parseMac($mac){
+    return str_replace(':', '', $mac);
+}
+//生成协议类型
+function getLotType($value){
+    return strtoupper(str_pad(dechex($value),4,"0",STR_PAD_LEFT));
+}
+//生成信息类型
+function getCommType($value){
+    return strtoupper(str_pad(dechex($value),4,"0",STR_PAD_LEFT));
+}
+//生成命令ID
+function getCommID($lotType,$commType,$time = ""){
+    return !empty($time) ? getLotType($lotType) . getCommType($commType) . $time . getStr(4) : getLotType($lotType) . getCommType($commType) . time() . getStr(4);
+}
+//生成命令
+function getCommand($commType,$body,$timestamp = "",$commID = ""){
+    $timestamp = empty($timestamp) ? (string) time() : (string) $timestamp;
+    if(empty($commID)){
+        $body = array_merge(["comm_id" => getCommID(config("yunlot.lottype.down"),$commType,$timestamp)],$body);
+    }else{
+        $body = array_merge(["comm_id" => $commID],$body);
+    }
+    return get_instance()->getAsynPool("yunlotPool")->init()->setHeader(["type" => config("yunlot.lottype.down")])->setBody($body)->setNow($timestamp)->out();
+}
 
 function decodePrtID($encrypt){
     $prtIDArr = get_instance()->getAsynPool("prtidPool")->decodeHash($encrypt);
@@ -81,8 +117,8 @@ function decodeCltID($encrypt){
 }
 
 
-function generateClitid($userID,$productID,$mac){
-    $time = time();
+function generateClitid($userID,$productID,$mac,$time = ""){
+    $time = empty($time) ? time() : $time;
     $macdec = hexdec(parseMac($mac));
     $userIDLength = str_pad(strlen($userID),2,0,STR_PAD_LEFT);
     $productIDLength = str_pad(strlen($productID),2,0,STR_PAD_LEFT);
@@ -111,25 +147,18 @@ function parseBindCode($bind,$key){
     }
 }
 
-//mac地址添加冒号
-function setMac($mac){
-    return substr($mac, 0, 2) . ':' . substr($mac, 2, 2) . ':' . substr($mac, 4, 2) . ':' . substr($mac, 6, 2) . ':' . substr($mac, 8, 2) . ':' . substr($mac, 10, 2);
-}
-
-//mac地址去除冒号
-function parseMac($mac){
-    return str_replace(':', '', $mac);
-}
-
-function getCommID($lotType,$commType,$time = ""){
-    return !empty($time) ? strtoupper(str_pad(dechex($lotType),4,"0",STR_PAD_LEFT) . str_pad(dechex($commType),4,"0",STR_PAD_LEFT) . $time) : strtoupper(str_pad(dechex($lotType),4,"0",STR_PAD_LEFT) . str_pad(dechex($commType),4,"0",STR_PAD_LEFT) . time());
-}
-
-function getCommand($commType,$body,$timestamp = ""){
-    $timestamp = empty($timestamp) ? time() : $timestamp;
-    return get_instance()->getAsynPool("yunlotPool")->init()->setHeader(["type" => config("yunlot.lottype.down")])->setBody($body)->setNow($timestamp)->out();
-}
-
+//生成topic
 function getTopic($prtid,$cltid){
     return sprintf(str_replace("+","%s",config("mqtt.topic.devicedown")),$prtid,$cltid);
+}
+
+function sendToMqtt($topics, $content,$qos = 0, $retain = 0,$callBack = NULL,$isAsync = true,&$msgID = Null){
+    try{
+        $mqttClient = get_instance()->getAsynPool("mqttClientPool");
+        $isAsync ? $mqttClient->publishAsync($topics,$message,$qos,$retain,$callBack,$msgID) : $mqttClient->publishSync($topics,$message,$qos,$retain,$msgID);
+        return true;
+    }catch(\Exception $e){
+        throw new \Exception($e->getMessage(),config("exceptions.MQTT_PUBLISH_ERROR"));
+        return false;
+    }
 }

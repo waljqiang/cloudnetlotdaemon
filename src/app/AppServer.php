@@ -6,11 +6,6 @@ use Server\CoreBase\HttpInput;
 use Server\CoreBase\Loader;
 use Server\SwooleDistributedServer;
 use Server\Components\Process\ProcessManager;
-use app\Process\DeviceUpReceiveProcess;
-use app\Process\IPLocationProcess;
-use app\Process\DeviceUpHandleMasterProcess;
-use app\Process\DeviceUpHandleChildProcess;
-use app\Process\DeviceOnoffProcess;
 use Server\Asyn\TcpClient\TcpClientPool;
 use app\Utils\GuzzleHttpClientPool;
 use app\Utils\YunlotPool;
@@ -77,17 +72,18 @@ class AppServer extends SwooleDistributedServer
     public function startProcess()
     {
         parent::startProcess();
-        //接收设备上行数据
-        ProcessManager::getInstance()->addProcess(DeviceUpReceiveProcess::class,DeviceUpReceiveProcess::NAME);
-        //上报数据处理
-        ProcessManager::getInstance()->addProcess(DeviceUpHandleMasterProcess::class,DeviceUpHandleMasterProcess::NAME);
-        for($i = 1;$i <= $this->config->get('public.process.upinfo.child_num');$i++){
-            ProcessManager::getInstance()->addProcess(DeviceUpHandleChildProcess::class,DeviceUpHandleChildProcess::NAME . $i);
+        $userProcesses = $this->config->get("public.process.defined");
+        if(!empty($userProcesses)){
+            foreach ($userProcesses as $userProcess => $num) {
+                if($num > 1){
+                    for($i = 1;$i <= $num;$i++){
+                        ProcessManager::getInstance()->addProcess($userProcess,$userProcess::NAME . $i);
+                    }
+                }else{
+                    ProcessManager::getInstance()->addProcess($userProcess,$userProcess::NAME);
+                }
+            }
         }
-        //设备上下线
-        ProcessManager::getInstance()->addProcess(DeviceOnoffProcess::class,DeviceOnoffProcess::NAME);
-        //IP定位
-        ProcessManager::getInstance()->addProcess(IPLocationProcess::class,IPLocationProcess::NAME);
     }
 
     /**

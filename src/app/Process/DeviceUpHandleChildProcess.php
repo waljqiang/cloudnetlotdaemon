@@ -18,8 +18,8 @@ class DeviceUpHandleChildProcess extends Process{
 	private $mqttService;
 
 	public function start($process){
-		$this->addAsynPool();
-		$this->addService();
+		$this->addAsynPools();
+		$this->addServices();
 	}
 
 	public function onShutDown(){
@@ -41,7 +41,7 @@ class DeviceUpHandleChildProcess extends Process{
 		}
 	}
 
-	private function addAsynPool(){
+	private function addAsynPools(){
 		get_instance()->addAsynPool("redisPool",new RedisAsynPool($this->config,$this->config->get('redis.active')));
 		get_instance()->addAsynPool("mysqlPool",new MysqlAsynPool($this->config,$this->config->get('mysql.active')));
 		get_instance()->addAsynPool("yunlotPool",new YunlotPool($this->config));
@@ -51,7 +51,7 @@ class DeviceUpHandleChildProcess extends Process{
 		get_instance()->addAsynPool("cltidPool",new HashcltidsPool($this->config));
 	}
 
-	private function addService(){
+	private function addServices(){
 		$this->cacheService = get_instance()->loader->model("app\Services\CacheService",$this);
 		$this->mqttService = get_instance()->loader->model("app\Services\MqttService",$this);
 	}

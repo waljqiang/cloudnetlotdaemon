@@ -26,7 +26,7 @@ class StatusCmd extends Command{
             return;
         }
         /*----------add user process start--------------------*/
-        exec("ps -ef | grep $server_name | grep -v 'grep' | grep -v 'vi' | grep -v 'sudo' | awk '{print $8}'",$res);
+        exec("ps -ef | grep $server_name | grep -v 'grep' | grep -v 'sudo' | awk '{print $8}'",$res);
         $arr = [
         	'cloudnetlotdaemon-Master',
         	'cloudnetlotdaemon-Manager',
@@ -44,16 +44,9 @@ class StatusCmd extends Command{
         		$userProcesses += $value;
         		$userProcessShow[] = [
 	                $key,
-	                $value,
-	                'TRUE'
+	                $value
 	            ];
-        	}else{
-        		$userProcessShow[] = [
-	                $key,
-	                $value,
-	                'FALSE'
-	            ];
-        	}   
+        	}
         }
         /*---------------------add user process end----------------*/
         $io->title('WELCOME START SWOOLE DISTRIBUTED, HAVE FUN!');
@@ -105,11 +98,13 @@ class StatusCmd extends Command{
             $show
         );
         /*---------------------add process show start----------------*/
-        $io->section('Process information');
-        $io->table(
-            ['P_NAME', 'P_NUM', 'P_IS_USER'],
-            $userProcessShow
-        );
+        if(!empty($userProcesses)){
+            $io->section('processes of the user defined information');
+            $io->table(
+                ['P_NAME', 'P_NUM'],
+                $userProcessShow
+            );
+        }
         /*---------------------add process show end------------------*/
         $io->note("$server_name server already running");
     }

@@ -1,0 +1,740 @@
+[06-Nov-2019 08:38:39 UTC] INFO   connect(): Connection established.
+[06-Nov-2019 08:38:39 UTC] INFO   connect(): connected=1
+[06-Nov-2019 08:39:18 UTC] INFO   connect(): Connection established.
+[06-Nov-2019 08:39:18 UTC] INFO   connect(): connected=1
+[06-Nov-2019 08:39:46 UTC] INFO   connect(): Connection established.
+[06-Nov-2019 08:39:46 UTC] INFO   connect(): connected=1
+[06-Nov-2019 08:40:03 UTC] INFO   connect(): Connection established.
+[06-Nov-2019 08:40:03 UTC] INFO   connect(): connected=1
+[06-Nov-2019 08:41:38 UTC] INFO   connect(): Connection established.
+[06-Nov-2019 08:41:38 UTC] INFO   connect(): connected=1
+[06-Nov-2019 08:44:53 UTC] INFO   connect(): Connection established.
+[06-Nov-2019 08:44:53 UTC] INFO   connect(): connected=1
+[06-Nov-2019 08:44:53 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:53 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:53 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:53 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:53 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:53 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:53 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:53 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:53 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:53 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:53 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:53 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:53 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:53 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:53 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:53 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:53 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:53 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:53 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:53 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:53 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:53 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:53 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:53 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:53 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:53 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:53 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:53 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:53 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:53 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:53 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:53 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:53 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:53 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:53 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:53 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:53 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:44:54 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:48:37 UTC] PHP Notice:  Undefined property: Waljqiang\Mqtt\Mqtt::$method in D:\vagrant\emqtt\src\Mqtt.php on line 23
+[06-Nov-2019 08:48:37 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, second array member is not a valid method in D:\vagrant\emqtt\src\Mqtt.php on line 23
+[06-Nov-2019 08:48:37 UTC] PHP Notice:  Undefined property: Waljqiang\Mqtt\Mqtt::$method in D:\vagrant\emqtt\src\Mqtt.php on line 23
+[06-Nov-2019 08:48:37 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, second array member is not a valid method in D:\vagrant\emqtt\src\Mqtt.php on line 23
+[06-Nov-2019 08:49:11 UTC] PHP Fatal error:  Cannot access parent:: when current class scope has no parent in D:\vagrant\emqtt\src\Mqtt.php on line 11
+[06-Nov-2019 08:49:32 UTC] INFO   connect(): Connection established.
+[06-Nov-2019 08:49:32 UTC] INFO   connect(): connected=1
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:49:32 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 08:59:54 UTC] PHP Notice:  Undefined property: sskaje\mqtt\MQTT::$method in D:\vagrant\emqtt\src\Mqtt.php on line 23
+[06-Nov-2019 08:59:54 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, second array member is not a valid method in D:\vagrant\emqtt\src\Mqtt.php on line 23
+[06-Nov-2019 08:59:54 UTC] PHP Notice:  Undefined property: sskaje\mqtt\MQTT::$method in D:\vagrant\emqtt\src\Mqtt.php on line 23
+[06-Nov-2019 08:59:54 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, second array member is not a valid method in D:\vagrant\emqtt\src\Mqtt.php on line 23
+[06-Nov-2019 09:00:26 UTC] INFO   connect(): Connection established.
+[06-Nov-2019 09:00:26 UTC] INFO   connect(): connected=1
+[06-Nov-2019 09:01:43 UTC] INFO   connect(): Connection established.
+[06-Nov-2019 09:01:43 UTC] INFO   connect(): connected=1
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:43 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:44 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:44 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:44 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:44 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:44 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:44 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:44 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:44 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:44 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:44 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:44 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:44 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:44 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:44 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:44 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:44 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:44 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:44 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:44 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:44 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:44 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:44 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:44 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:44 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:44 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:44 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:44 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:44 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:44 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:01:44 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   connect(): Connection established.
+[06-Nov-2019 09:08:36 UTC] INFO   connect(): connected=1
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:08:36 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:23:49 UTC] PHP Fatal error:  Access level to Waljqiang\Mqtt\Mqtt::setSocketContext() must be public (as in class sskaje\mqtt\MQTT) in D:\vagrant\emqtt\src\Mqtt.php on line 8
+[06-Nov-2019 09:25:17 UTC] INFO   connect(): Connection established.
+[06-Nov-2019 09:25:17 UTC] INFO   connect(): connected=1
+[06-Nov-2019 09:25:17 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:25:18 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   connect(): Connection established.
+[06-Nov-2019 09:45:27 UTC] INFO   connect(): connected=1
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:27 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:28 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:28 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:28 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:28 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:28 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:28 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:28 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:45:28 UTC] INFO   publish() QoS=0, MsgID=0, DUP=0
+[06-Nov-2019 09:54:34 UTC] PHP Fatal error:  Class 'MyPublishHandler' not found in D:\vagrant\emqtt\examples\publish_async_qos1.php on line 27
+[06-Nov-2019 10:07:50 UTC] PHP Fatal error:  Class 'Handler' not found in D:\vagrant\emqtt\examples\publish_async_qos1.php on line 28
+[07-Nov-2019 01:49:00 UTC] PHP Fatal error:  Cannot use sskaje\mqtt\MQTT as MQTT because the name is already in use in D:\vagrant\emqtt\src\MessageHandler.php on line 4
+[07-Nov-2019 01:50:31 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::connack() should be compatible with sskaje\mqtt\MessageHandler::connack(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\CONNACK $connack_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:50:31 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::disconnect() should be compatible with sskaje\mqtt\MessageHandler::disconnect(sskaje\mqtt\MQTT $mqtt) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:50:31 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::suback() should be compatible with sskaje\mqtt\MessageHandler::suback(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\SUBACK $suback_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:50:31 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::unsuback() should be compatible with sskaje\mqtt\MessageHandler::unsuback(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\UNSUBACK $unsuback_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:50:31 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::publish() should be compatible with sskaje\mqtt\MessageHandler::publish(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBLISH $publish_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:50:31 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::puback() should be compatible with sskaje\mqtt\MessageHandler::puback(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBACK $puback_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:50:31 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::pubrec() should be compatible with sskaje\mqtt\MessageHandler::pubrec(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBREC $pubrec_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:50:31 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::pubrel() should be compatible with sskaje\mqtt\MessageHandler::pubrel(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBREL $pubrel_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:50:31 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::pubcomp() should be compatible with sskaje\mqtt\MessageHandler::pubcomp(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBCOMP $pubcomp_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:50:31 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::pingresp() should be compatible with sskaje\mqtt\MessageHandler::pingresp(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PINGRESP $pingresp_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:50:53 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::connack() should be compatible with sskaje\mqtt\MessageHandler::connack(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\CONNACK $connack_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:50:53 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::disconnect() should be compatible with sskaje\mqtt\MessageHandler::disconnect(sskaje\mqtt\MQTT $mqtt) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:50:53 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::suback() should be compatible with sskaje\mqtt\MessageHandler::suback(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\SUBACK $suback_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:50:53 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::unsuback() should be compatible with sskaje\mqtt\MessageHandler::unsuback(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\UNSUBACK $unsuback_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:50:53 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::publish() should be compatible with sskaje\mqtt\MessageHandler::publish(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBLISH $publish_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:50:53 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::puback() should be compatible with sskaje\mqtt\MessageHandler::puback(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBACK $puback_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:50:53 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::pubrec() should be compatible with sskaje\mqtt\MessageHandler::pubrec(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBREC $pubrec_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:50:53 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::pubrel() should be compatible with sskaje\mqtt\MessageHandler::pubrel(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBREL $pubrel_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:50:53 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::pubcomp() should be compatible with sskaje\mqtt\MessageHandler::pubcomp(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBCOMP $pubcomp_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:50:53 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::pingresp() should be compatible with sskaje\mqtt\MessageHandler::pingresp(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PINGRESP $pingresp_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:52:27 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::connack() should be compatible with sskaje\mqtt\MessageHandler::connack(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\CONNACK $connack_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:52:27 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::disconnect() should be compatible with sskaje\mqtt\MessageHandler::disconnect(sskaje\mqtt\MQTT $mqtt) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:52:27 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::suback() should be compatible with sskaje\mqtt\MessageHandler::suback(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\SUBACK $suback_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:52:27 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::unsuback() should be compatible with sskaje\mqtt\MessageHandler::unsuback(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\UNSUBACK $unsuback_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:52:27 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::publish() should be compatible with sskaje\mqtt\MessageHandler::publish(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBLISH $publish_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:52:27 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::puback() should be compatible with sskaje\mqtt\MessageHandler::puback(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBACK $puback_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:52:27 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::pubrec() should be compatible with sskaje\mqtt\MessageHandler::pubrec(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBREC $pubrec_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:52:27 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::pubrel() should be compatible with sskaje\mqtt\MessageHandler::pubrel(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBREL $pubrel_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:52:27 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::pubcomp() should be compatible with sskaje\mqtt\MessageHandler::pubcomp(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBCOMP $pubcomp_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:52:27 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::pingresp() should be compatible with sskaje\mqtt\MessageHandler::pingresp(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PINGRESP $pingresp_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:53:06 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::connack() should be compatible with sskaje\mqtt\MessageHandler::connack(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\CONNACK $connack_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:53:06 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::disconnect() should be compatible with sskaje\mqtt\MessageHandler::disconnect(sskaje\mqtt\MQTT $mqtt) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:53:06 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::suback() should be compatible with sskaje\mqtt\MessageHandler::suback(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\SUBACK $suback_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:53:06 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::unsuback() should be compatible with sskaje\mqtt\MessageHandler::unsuback(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\UNSUBACK $unsuback_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:53:06 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::publish() should be compatible with sskaje\mqtt\MessageHandler::publish(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBLISH $publish_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:53:06 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::puback() should be compatible with sskaje\mqtt\MessageHandler::puback(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBACK $puback_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:53:06 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::pubrec() should be compatible with sskaje\mqtt\MessageHandler::pubrec(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBREC $pubrec_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:53:06 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::pubrel() should be compatible with sskaje\mqtt\MessageHandler::pubrel(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBREL $pubrel_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:53:06 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::pubcomp() should be compatible with sskaje\mqtt\MessageHandler::pubcomp(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBCOMP $pubcomp_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:53:06 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::pingresp() should be compatible with sskaje\mqtt\MessageHandler::pingresp(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PINGRESP $pingresp_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:53:59 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::connack() should be compatible with sskaje\mqtt\MessageHandler::connack(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\CONNACK $connack_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:53:59 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::disconnect() should be compatible with sskaje\mqtt\MessageHandler::disconnect(sskaje\mqtt\MQTT $mqtt) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:53:59 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::suback() should be compatible with sskaje\mqtt\MessageHandler::suback(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\SUBACK $suback_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:53:59 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::unsuback() should be compatible with sskaje\mqtt\MessageHandler::unsuback(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\UNSUBACK $unsuback_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:53:59 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::publish() should be compatible with sskaje\mqtt\MessageHandler::publish(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBLISH $publish_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:53:59 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::puback() should be compatible with sskaje\mqtt\MessageHandler::puback(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBACK $puback_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:53:59 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::pubrec() should be compatible with sskaje\mqtt\MessageHandler::pubrec(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBREC $pubrec_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:53:59 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::pubrel() should be compatible with sskaje\mqtt\MessageHandler::pubrel(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBREL $pubrel_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:53:59 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::pubcomp() should be compatible with sskaje\mqtt\MessageHandler::pubcomp(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBCOMP $pubcomp_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:53:59 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::pingresp() should be compatible with sskaje\mqtt\MessageHandler::pingresp(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PINGRESP $pingresp_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:55:24 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::connack() should be compatible with sskaje\mqtt\MessageHandler::connack(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\CONNACK $connack_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 17
+[07-Nov-2019 01:55:24 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::disconnect() should be compatible with sskaje\mqtt\MessageHandler::disconnect(sskaje\mqtt\MQTT $mqtt) in D:\vagrant\emqtt\src\MessageHandler.php on line 17
+[07-Nov-2019 01:55:24 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::suback() should be compatible with sskaje\mqtt\MessageHandler::suback(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\SUBACK $suback_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 17
+[07-Nov-2019 01:55:24 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::unsuback() should be compatible with sskaje\mqtt\MessageHandler::unsuback(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\UNSUBACK $unsuback_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 17
+[07-Nov-2019 01:55:24 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::publish() should be compatible with sskaje\mqtt\MessageHandler::publish(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBLISH $publish_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 17
+[07-Nov-2019 01:55:24 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::puback() should be compatible with sskaje\mqtt\MessageHandler::puback(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBACK $puback_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 17
+[07-Nov-2019 01:55:24 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::pubrec() should be compatible with sskaje\mqtt\MessageHandler::pubrec(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBREC $pubrec_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 17
+[07-Nov-2019 01:55:24 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::pubrel() should be compatible with sskaje\mqtt\MessageHandler::pubrel(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBREL $pubrel_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 17
+[07-Nov-2019 01:55:24 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::pubcomp() should be compatible with sskaje\mqtt\MessageHandler::pubcomp(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBCOMP $pubcomp_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 17
+[07-Nov-2019 01:55:24 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::pingresp() should be compatible with sskaje\mqtt\MessageHandler::pingresp(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PINGRESP $pingresp_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 17
+[07-Nov-2019 01:56:42 UTC] PHP Fatal error:  Cannot use sskaje\mqtt\MQTT as MQTT because the name is already in use in D:\vagrant\emqtt\src\MessageHandler.php on line 15
+[07-Nov-2019 01:57:13 UTC] PHP Fatal error:  Cannot use sskaje\mqtt\MQTT as MQTT because the name is already in use in D:\vagrant\emqtt\src\MessageHandler.php on line 14
+[07-Nov-2019 01:58:15 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::puback() should be compatible with sskaje\mqtt\MessageHandler::puback(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBACK $puback_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 01:58:15 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::pubcomp() should be compatible with sskaje\mqtt\MessageHandler::pubcomp(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBCOMP $pubcomp_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 16
+[07-Nov-2019 02:04:37 UTC] PHP Fatal error:  Cannot use sskaje\mqtt\MQTT as MQTT because the name is already in use in D:\vagrant\emqtt\src\MessageHandler.php on line 7
+[07-Nov-2019 02:05:05 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::puback() should be compatible with sskaje\mqtt\MessageHandler::puback(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBACK $puback_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 10
+[07-Nov-2019 02:05:05 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::pubcomp() should be compatible with sskaje\mqtt\MessageHandler::pubcomp(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBCOMP $pubcomp_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 10
+[07-Nov-2019 02:13:53 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::puback() should be compatible with sskaje\mqtt\MessageHandler::puback(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBACK $puback_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 10
+[07-Nov-2019 02:13:53 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::pubcomp() should be compatible with sskaje\mqtt\MessageHandler::pubcomp(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBCOMP $pubcomp_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 10
+[07-Nov-2019 02:13:53 UTC] PHP Catchable fatal error:  Argument 1 passed to sskaje\mqtt\MQTT::setHandler() must be an instance of sskaje\mqtt\MessageHandler, instance of Closure given, called in D:\vagrant\emqtt\examples\publish_async_qos1.php on line 39 and defined in D:\vagrant\emqtt\vendor\sskaje\mqtt\mqtt\MQTT.php on line 270
+[07-Nov-2019 02:15:32 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::puback() should be compatible with sskaje\mqtt\MessageHandler::puback(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBACK $puback_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 10
+[07-Nov-2019 02:15:32 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::pubcomp() should be compatible with sskaje\mqtt\MessageHandler::pubcomp(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBCOMP $pubcomp_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 10
+[07-Nov-2019 02:15:32 UTC] PHP Catchable fatal error:  Argument 1 passed to sskaje\mqtt\MQTT::setHandler() must be an instance of sskaje\mqtt\MessageHandler, instance of Closure given, called in D:\vagrant\emqtt\examples\publish_async_qos1.php on line 39 and defined in D:\vagrant\emqtt\vendor\sskaje\mqtt\mqtt\MQTT.php on line 270
+[07-Nov-2019 02:16:00 UTC] PHP Catchable fatal error:  Argument 1 passed to sskaje\mqtt\MQTT::setHandler() must be an instance of sskaje\mqtt\MessageHandler, instance of Closure given, called in D:\vagrant\emqtt\examples\publish_async_qos1.php on line 39 and defined in D:\vagrant\emqtt\vendor\sskaje\mqtt\mqtt\MQTT.php on line 270
+[07-Nov-2019 02:18:42 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::puback() should be compatible with sskaje\mqtt\MessageHandler::puback(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBACK $puback_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 10
+[07-Nov-2019 02:18:42 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::pubcomp() should be compatible with sskaje\mqtt\MessageHandler::pubcomp(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBCOMP $pubcomp_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 10
+[07-Nov-2019 02:23:19 UTC] PHP Catchable fatal error:  Argument 1 passed to sskaje\mqtt\MQTT::setHandler() must be an instance of sskaje\mqtt\MessageHandler, instance of MessageHandler given, called in D:\vagrant\emqtt\examples\publish_async_qos1.php on line 38 and defined in D:\vagrant\emqtt\vendor\sskaje\mqtt\mqtt\MQTT.php on line 270
+[07-Nov-2019 02:25:09 UTC] PHP Fatal error:  Class 'MessageHandler' not found in D:\vagrant\emqtt\examples\publish_async_qos1.php on line 29
+[07-Nov-2019 02:25:23 UTC] PHP Fatal error:  Class 'MessageHandler' not found in D:\vagrant\emqtt\examples\publish_async_qos1.php on line 29
+[07-Nov-2019 02:26:46 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::puback() should be compatible with sskaje\mqtt\MessageHandler::puback(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBACK $puback_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 8
+[07-Nov-2019 02:31:08 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::puback() should be compatible with sskaje\mqtt\MessageHandler::puback(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBACK $puback_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 8
+[07-Nov-2019 02:31:08 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::pubcomp() should be compatible with sskaje\mqtt\MessageHandler::pubcomp(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBCOMP $pubcomp_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 8
+[07-Nov-2019 02:31:42 UTC] PHP Fatal error:  Cannot use sskaje\mqtt\MQTT as MQTT because the name is already in use in D:\vagrant\emqtt\src\MessageHandler.php on line 6
+[07-Nov-2019 02:32:08 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::puback() should be compatible with sskaje\mqtt\MessageHandler::puback(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBACK $puback_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 8
+[07-Nov-2019 02:32:08 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::pubcomp() should be compatible with sskaje\mqtt\MessageHandler::pubcomp(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBCOMP $pubcomp_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 8
+[07-Nov-2019 02:32:08 UTC] PHP Catchable fatal error:  Argument 1 passed to Waljqiang\Mqtt\MessageHandler::puback() must be an instance of Waljqiang\Mqtt\sskaje\mqtt\MQTT, instance of Waljqiang\Mqtt\Mqtt given in D:\vagrant\emqtt\src\MessageHandler.php on line 13
+[07-Nov-2019 02:32:20 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::pubcomp() should be compatible with sskaje\mqtt\MessageHandler::pubcomp(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBCOMP $pubcomp_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 8
+[07-Nov-2019 02:45:12 UTC] PHP Strict Standards:  Declaration of Waljqiang\Mqtt\MessageHandler::connack() should be compatible with sskaje\mqtt\MessageHandler::connack(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\CONNACK $connack_object) in D:\vagrant\emqtt\src\MessageHandler.php on line 8
+[07-Nov-2019 02:48:34 UTC] PHP Fatal error:  Call to undefined method Waljqiang\Mqtt\Mqtt::setClient() in D:\vagrant\emqtt\examples\publish_async_qos1.php on line 13
+[07-Nov-2019 02:49:42 UTC] ERROR  call_handler function onPuback NOT CALLABLE
+[07-Nov-2019 02:50:00 UTC] ERROR  call_handler function onPuback NOT CALLABLE
+[07-Nov-2019 02:51:07 UTC] ERROR  call_handler function onPuback NOT CALLABLE
+[07-Nov-2019 02:51:19 UTC] ERROR  call_handler function onPuback NOT CALLABLE
+[07-Nov-2019 02:51:57 UTC] PHP Fatal error:  Class 'Waljqiang\Mqtt\Utility' not found in D:\vagrant\emqtt\src\Mqtt.php on line 24
+[07-Nov-2019 02:52:28 UTC] ERROR  call_handler function onPuback NOT CALLABLE
+[07-Nov-2019 02:53:05 UTC] ERROR  call_handler function onPuback NOT CALLABLE
+[07-Nov-2019 03:06:21 UTC] PHP Fatal error:  Call to undefined method Waljqiang\Mqtt\Mqtt::setClient() in D:\vagrant\emqtt\examples\publish_async_qos1.php on line 12
+[07-Nov-2019 03:35:42 UTC] PHP Catchable fatal error:  Argument 2 passed to Handler::onPuback() must be an instance of Waljqiang\Mqtt\Message\PUBACK, instance of sskaje\mqtt\Message\PUBACK given in D:\vagrant\emqtt\examples\Handler.php on line 11
+[07-Nov-2019 03:36:36 UTC] PHP Catchable fatal error:  Argument 2 passed to Waljqiang\Mqtt\MessageHandler::onPuback() must be an instance of Waljqiang\Mqtt\Message\PUBACK, instance of sskaje\mqtt\Message\PUBACK given in D:\vagrant\emqtt\src\MessageHandler.php on line 39
+[07-Nov-2019 05:57:51 UTC] PHP Fatal error:  Class 'CallBack' not found in D:\vagrant\emqtt\examples\subscribe.php on line 24
+[07-Nov-2019 05:58:30 UTC] PHP Strict Standards:  Declaration of CallBack::publish() should be compatible with sskaje\mqtt\MessageHandler::publish(sskaje\mqtt\MQTT $mqtt, sskaje\mqtt\Message\PUBLISH $publish_object) in D:\vagrant\emqtt\examples\subscribe.php on line 7
+[07-Nov-2019 05:59:00 UTC] PHP Catchable fatal error:  Argument 2 passed to Waljqiang\Mqtt\MessageHandler::onPingresp() must be an instance of Waljqiang\Mqtt\PINGRESP, instance of sskaje\mqtt\Message\PINGRESP given in D:\vagrant\emqtt\src\MessageHandler.php on line 46
+[07-Nov-2019 05:59:51 UTC] PHP Catchable fatal error:  Argument 2 passed to Waljqiang\Mqtt\MessageHandler::onPingresp() must be an instance of Waljqiang\Mqtt\PINGRESP, instance of sskaje\mqtt\Message\PINGRESP given in D:\vagrant\emqtt\src\MessageHandler.php on line 46

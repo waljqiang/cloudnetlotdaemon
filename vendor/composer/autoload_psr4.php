@@ -10,6 +10,7 @@ return array(
     'voku\\helper\\' => array($vendorDir . '/voku/anti-xss/src/voku/helper'),
     'voku\\' => array($vendorDir . '/voku/portable-ascii/src/voku', $vendorDir . '/voku/portable-utf8/src/voku'),
     'test\\' => array($baseDir . '/src/test', $vendorDir . '/tmtbe/swooledistributed/src/test'),
+    'sskaje\\mqtt\\' => array($vendorDir . '/sskaje/mqtt/mqtt'),
     'app\\' => array($baseDir . '/src/app', $vendorDir . '/tmtbe/swooledistributed/src/app'),
     'Whoops\\' => array($vendorDir . '/filp/whoops/src/Whoops'),
     'Waljqiang\\Yunlot\\' => array($vendorDir . '/waljqiang/yunlot/src'),

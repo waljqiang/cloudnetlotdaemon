@@ -22,8 +22,7 @@ class MqttService extends BaseService{
 		parent::initialization($context);
 		$this->deviceModel = $this->loader->model(DeviceModel::class,$this);
 		$this->cacheService = $this->loader->model(CacheService::class,$this);
-		$this->yunlotPool = get_instance()->getAsynPool("yunlotPool")->init();
-		
+		$this->yunlotPool = get_instance()->getAsynPool("yunlotPool")->init();	
 	}
 
 	public function handle($prtid,$cltid,$mac,$data){
@@ -35,7 +34,7 @@ class MqttService extends BaseService{
 			$bind = $yunData->getHeader("bind");
 			list($toUid,$devMac,$gid) = parseBindCode($bind,parseMac($mac));
 			$this->checkData($prtid,$cltid,$mac,$bind,$toUid);
-			$this->handleData($prtid,$cltid,$mac,$toUid,$gid,$yunData->getBody());
+			$this->handleData($prtid,$cltid,$mac,$toUid,$gid,$yunData->getBody(),$yunData->getNow());
 		}catch(\Exception $e){
 			logger("code[" . $e->getCode() . "]message[".$e->getMessage() . "]",ERROR);
 			//回错误消息给设备
@@ -50,21 +49,19 @@ class MqttService extends BaseService{
 				]
 			];
 			$command = getCommand(config("device.typeinfo.upinfofail"),$body,$time);
-			mqttSend($topic,$command);
+			sendToMqtt([$topic],$command);
 		}
 		
 	}
 
-	private function handleData($prtid,$cltid,$mac,$toUid,$gid,$data){
+	private function handleData($prtid,$cltid,$mac,$toUid,$gid,$data,$time){
 		$res = [];
 		if(!empty($data)){
-			$time = Carbon::now()->timestamp;
 			$device = $this->deviceModel->getDevices($mac);
+			if(!empty($device["user_id"]) && $toUid != $device["user_id"]){//如果设备已绑定，则不能更改绑定用户
+				throw new \Exception("The device is binded to another user",config('exceptions.DEV_BINDED'));
+			}
 			$this->db->begin(function() use ($prtid,$cltid,$mac,$toUid,$gid,$data,$time,$device){
-				if($toUid != $device["user_id"]){//从新绑定设备,需要清除注册缓存
-					$this->cacheService->delRegister($prtid,$mac);
-				}
-				$this->cacheService->setDeviceDynamic($mac,["status" => config("device.status.online")]);
 				foreach($data as $key => $value){
 					logger("Start handle {$key} data of the device[" . $mac . "]",DEBUG);
 					switch ($key) {
@@ -95,6 +92,8 @@ class MqttService extends BaseService{
 					}
 					logger("Handle {$key} data of the device[" . $mac . "] done",DEBUG);
 				}
+			},function($mysql,$e){
+				logger("code:" . $e->getCode() . ";message:" . $e->getMessage(),ERROR);
 			});
 		}
 	}
@@ -123,19 +122,27 @@ class MqttService extends BaseService{
 			}
 			$deviceData["is_ip_location"] = !isset($data["location"]) && isset($data["net_ip"]) ? 1 : 0;
 			$deviceData["pid"] = !empty($parentMac) ? $parentMac : "";
-			if(empty($device) || $toUid != $device["user_id"]){//从新绑定设备
-				$deviceData["user_id"] = $toUid;
-				$deviceData["group_id"] = $gid;
-				$deviceData["join_time"] = $time;//设备接入时间
-			}
 			$deviceData["updated_at"] = $time;
-			if(empty($device)){
+
+			if(!empty($device)){
+				if(!empty($device["user_id"])){//设备已绑定用户
+					if($toUid != $device["user_id"]){//已绑定设备如果要绑定其他用户,需要先解绑设备
+						throw new \Exception("The device is binded to another user",config('exceptions.DEV_BINDED'));
+					}
+				}else{//设备未绑定用户，执行绑定操作
+					$deviceData["user_id"] = $toUid;
+					$deviceData["join_time"] = $time;
+				}
+
+				$rs1 = $this->deviceModel->save($deviceData,["dev_mac" => $mac],"device");
+			}else{
+				$deviceData["user_id"] = $toUid;
 				$deviceData["dev_mac"] = $mac;
+				$deviceData["join_time"] = $time;
 				$deviceData["created_at"] = $time;
 				$rs1 = $this->deviceModel->add($deviceData,false,"device");
-			}else{
-				$rs1 = $this->deviceModel->save($deviceData,["dev_mac" => $mac],"device");
 			}
+
 			if(!empty($device[self::SYSTEM])){
 				$params = $this->mergeArray($device[self::SYSTEM],$data);
 				$rs2 = $this->deviceModel->save([
@@ -154,17 +161,26 @@ class MqttService extends BaseService{
 					"updated_at" => $time
 				],false,"device_params");
 			}
+			//拓扑关系处理
+			if(isset($data["parent"]["mac"]) && !empty($data["parent"]["mac"])){
+				$relationData = [
+					"uid" => $toUid,
+					"mac" => $mac,
+					"pid" => $data["parent"]["mac"]
+				];
+				$rs3 = $this->deviceModel->add($relationData,true,"device_relation");
+			}else{
+				$rs3 = true;
+			}
 		}
 
-		if($rs1 && $rs2){
+		if($rs1 && $rs2 && $rs3){
 			//如果没有设置位置信息,则需要ip进行位置定位
 			if(!isset($data["location"]) && isset($data["net_ip"])){
 				$this->cacheService->setLocation(["mac" => $mac,"net_ip" => $data["net_ip"]]);
 			}
 			//更新设备CPU使用率、内存使用率、运行时间
-			$cacheData = array_intersect_key($data,["cpu_use" => "","memory_use" => "","runtime" => ""]);
-			$cacheData["status"] = config("device.status.online");
-			$this->cacheService->setDeviceDynamic($mac,$cacheData);
+			$this->cacheService->parseStatus($mac,$data,$time);
 		}else{
 			throw new \Exception("Handle the device[" . $mac . "] system data failure",config('exceptions.MYSQL_EXEC_ERROR'));
 		}
@@ -172,153 +188,201 @@ class MqttService extends BaseService{
 
 	//网络数据处理
 	public function handleNetwork($device,$data,$time){
-		if(!empty($device[self::NETWORK])){
-			$params = $this->mergeArray($device[self::NETWORK],$data);
-			$rs = $this->deviceModel->save([
-				"params" => json_encode($params,JSON_UNESCAPED_UNICODE),
-				"updated_at" => $time
-			],[
-				"dev_mac" => $device["dev_mac"],
-				"type" => config("device.typeinfo.network")
-			],"device_params");
-		}else{
-			$rs = $this->deviceModel->add([
-				"dev_mac" => $device["dev_mac"],
-				"params" => json_encode($data,JSON_UNESCAPED_UNICODE),
-				"type" => config("device.typeinfo.network"),
-				"created_at" => $time,
-				"updated_at" => $time
-			],false,"device_params");
-		}
-		
-		if(!$rs){
-			throw new \Exception("Handle the device[" . $device["dev_mac"] . "] network data failure",config('exceptions.MYSQL_EXEC_ERROR'));
+		if(!empty($data)){
+			if(!empty($device[self::NETWORK])){
+				$params = $this->mergeArray($device[self::NETWORK],$data);
+				$rs = $this->deviceModel->save([
+					"params" => json_encode($params,JSON_UNESCAPED_UNICODE),
+					"updated_at" => $time
+				],[
+					"dev_mac" => $device["dev_mac"],
+					"type" => config("device.typeinfo.network")
+				],"device_params");
+			}else{
+				$rs = $this->deviceModel->add([
+					"dev_mac" => $device["dev_mac"],
+					"params" => json_encode($data,JSON_UNESCAPED_UNICODE),
+					"type" => config("device.typeinfo.network"),
+					"created_at" => $time,
+					"updated_at" => $time
+				],false,"device_params");
+			}
+			
+			if(!$rs){
+				throw new \Exception("Handle the device[" . $device["dev_mac"] . "] network data failure",config('exceptions.MYSQL_EXEC_ERROR'));
+			}
 		}
 	}
 
 	//处理无线数据
 	public function handleWifi($device,$data,$time){
-		if(!empty($device[self::WIFI])){
-			if(isset($data["radios"]) && !empty($data["radios"])){
-				foreach($device[self::WIFI]["radios"] as $k => $radio){
-					if(isset($data["radios"][$k]["vap"])){
-						foreach ($radio["vap"] as $m => $vap) {
-							$vaps[] = isset($data["radios"][$k]["vap"][$m]) ? $this->mergeArray($vap,$data["radios"][$k]["vap"][$m]) : $vap;
+		if(isset($data["total"]) && $data["total"] > 0){
+			if(!empty($device[self::WIFI])){
+				if(isset($data["radios"]) && !empty($data["radios"])){
+					foreach($device[self::WIFI]["radios"] as $k => $radio){
+						if(isset($data["radios"][$k]["vap"])){
+							foreach ($radio["vap"] as $m => $vap) {
+								$vaps[] = isset($data["radios"][$k]["vap"][$m]) ? $this->mergeArray($vap,$data["radios"][$k]["vap"][$m]) : $vap;
+							}
+							$data["radios"][$k]["vap"] = $vaps;
 						}
-						$data["radios"][$k]["vap"] = $vaps;
+						$radios[] = isset($data["radios"][$k]) ? $this->mergeArray($radio,$data["radios"][$k]) : $radio;
 					}
-					$radios[] = isset($data["radios"][$k]) ? $this->mergeArray($radio,$data["radios"][$k]) : $radio;
+					$data["radios"] = $radios;
 				}
-				$data["radios"] = $radios;
+				$params = $this->mergeArray($device[self::WIFI],$data);
+				$rs = $this->deviceModel->save([
+					"params" => json_encode($params,JSON_UNESCAPED_UNICODE),
+					"updated_at" => $time
+				],[
+					"dev_mac" => $device["dev_mac"],
+					"type" => config("device.typeinfo.wifi")
+				],"device_params");
+			}else{
+				$rs = $this->deviceModel->add([
+					"dev_mac" => $device["dev_mac"],
+					"params" => json_encode($data,JSON_UNESCAPED_UNICODE),
+					"type" => config("device.typeinfo.wifi"),
+					"created_at" => $time,
+					"updated_at" => $time
+				],false,"device_params");
 			}
-			$params = $this->mergeArray($device[self::WIFI],$data);
-			$rs = $this->deviceModel->save([
-				"params" => json_encode($params,JSON_UNESCAPED_UNICODE),
-				"updated_at" => $time
-			],[
-				"dev_mac" => $device["dev_mac"],
-				"type" => config("device.typeinfo.wifi")
-			],"device_params");
-		}else{
-			$rs = $this->deviceModel->add([
-				"dev_mac" => $device["dev_mac"],
-				"params" => json_encode($data,JSON_UNESCAPED_UNICODE),
-				"type" => config("device.typeinfo.wifi"),
-				"created_at" => $time,
-				"updated_at" => $time
-			],false,"device_params");
-		}
-		
-		if(!$rs){
-			throw new \Exception("Handle the device[" . $device["dev_mac"] . "] wifi data failure",config('exceptions.MYSQL_EXEC_ERROR'));
+			
+			if(!$rs){
+				throw new \Exception("Handle the device[" . $device["dev_mac"] . "] wifi data failure",config('exceptions.MYSQL_EXEC_ERROR'));
+			}
 		}
 	}
 
 	//处理用户数据
 	public function handleUser($device,$data,$time){
-		if(!empty($device[self::USER])){
-			$params = $this->mergeArray($device[self::USER],$data);
-			$rs = $this->deviceModel->save([
-				"params" => json_encode($params,JSON_UNESCAPED_UNICODE),
-				"updated_at" => $time
-			],[
-				"dev_mac" => $device["dev_mac"],
-				"type" => config("device.typeinfo.user")
-			],"device_params");
-		}else{
-			$rs = $this->deviceModel->add([
-				"dev_mac" => $device["dev_mac"],
-				"params" => json_encode($data,JSON_UNESCAPED_UNICODE),
-				"type" => config("device.typeinfo.user"),
+		if(isset($data["total"])){
+			if(!empty($device[self::USER])){
+				$params = $this->mergeArray($device[self::USER],$data);
+				$rs1 = $this->deviceModel->save([
+					"params" => json_encode($params,JSON_UNESCAPED_UNICODE),
+					"updated_at" => $time
+				],[
+					"dev_mac" => $device["dev_mac"],
+					"type" => config("device.typeinfo.user")
+				],"device_params");
+			}else{
+				$rs1 = $this->deviceModel->add([
+					"dev_mac" => $device["dev_mac"],
+					"params" => json_encode($data,JSON_UNESCAPED_UNICODE),
+					"type" => config("device.typeinfo.user"),
+					"created_at" => $time,
+					"updated_at" => $time
+				],false,"device_params");
+			}
+			
+			$rs2 = $this->deviceModel->add([
+				"mac" => $device["dev_mac"],
+				"onlines" => $data["total"],
 				"created_at" => $time,
 				"updated_at" => $time
-			],false,"device_params");
-		}
-		
-		if(!$rs){
-			throw new \Exception("Handle the device[" . $device["dev_mac"] . "] user data failure",config('exceptions.MYSQL_EXEC_ERROR'));
+			],false,"device_clients_nums");
+			if(!$rs1 || !$rs2){
+				throw new \Exception("Handle the device[" . $device["dev_mac"] . "] user data failure",config('exceptions.MYSQL_EXEC_ERROR'));
+			}
 		}
 	}
 
 	//定时重启数据
 	public function handleReboot($device,$data,$time){
-		if(!empty($device[self::TIMEREBOOT])){
-			$params = $this->mergeArray($device[self::TIMEREBOOT],$data);
-			$rs = $this->deviceModel->save([
-				"params" => json_encode($params,JSON_UNESCAPED_UNICODE),
-				"updated_at" => $time
-			],[
-				"dev_mac" => $device["dev_mac"],
-				"type" => config("device.typeinfo.time_reboot")
-			],"device_params");
-		}else{
-			$rs = $this->deviceModel->add([
-				"dev_mac" => $device["dev_mac"],
-				"params" => json_encode($data,JSON_UNESCAPED_UNICODE),
-				"type" => config("device.typeinfo.time_reboot"),
-				"created_at" => $time,
-				"updated_at" => $time
-			],false,"device_params");
-		}
-		
-		if(!$rs){
-			throw new \Exception("Handle the device[" . $device["dev_mac"] . "] reboot_time data failure",config('exceptions.MYSQL_EXEC_ERROR'));
+		if(!empty($data)){
+			if(!empty($device[self::TIMEREBOOT])){
+				$params = $this->mergeArray($device[self::TIMEREBOOT],$data);
+				$rs = $this->deviceModel->save([
+					"params" => json_encode($params,JSON_UNESCAPED_UNICODE),
+					"updated_at" => $time
+				],[
+					"dev_mac" => $device["dev_mac"],
+					"type" => config("device.typeinfo.time_reboot")
+				],"device_params");
+			}else{
+				$rs = $this->deviceModel->add([
+					"dev_mac" => $device["dev_mac"],
+					"params" => json_encode($data,JSON_UNESCAPED_UNICODE),
+					"type" => config("device.typeinfo.time_reboot"),
+					"created_at" => $time,
+					"updated_at" => $time
+				],false,"device_params");
+			}
+			
+			if(!$rs){
+				throw new \Exception("Handle the device[" . $device["dev_mac"] . "] reboot_time data failure",config("exceptions.MYSQL_EXEC_ERROR"));
+			}
 		}
 	}
 
 	//子设备数据
 	public function handleChild($pdevice,$toUid,$gid,$data,$time){
-		if(!empty($data["list"])){
-			foreach($data["list"] as $value){
-				$mac = $value["mac"];
-				unset($value["mac"]);
-				$device = $this->deviceModel->getDevices($mac);
-				$_device = !empty($device) ? $device : ["dev_mac" => $mac];
-				foreach ($value as $k => $v) {
-					logger("Start handle {$k} data of the device[" . $mac . "]",DEBUG);
-					switch ($k) {
-						case self::SYSTEM:
-							$this->handleSystem($device,$toUid,$gid,$v,$time,$pdevice["dev_mac"]);
-							break;
-						case self::NETWORK:
-							$this->handleNetwork($_device,$v,$time);
-							break;
-						case self::WIFI:
-							$this->handleWifi($_device,$v,$time);
-							break;
-						case self::USER:
-							$this->handleUser($_device,$v,$time);
-							break;
-						case self::TIMEREBOOT:
-							$this->handleReboot($_device,$v,$time);
-							break;
-						default:
-							# code...
-							break;
-					}
-					logger("Handle {$k} data of the device[" . $mac . "] done",DEBUG);
-				}			
+		if(isset($data["list"]) && !empty($data["list"])){//全量上报
+			logger("Start handle all childs of the device[" . $pdevice["dev_mac"] . "]",DEBUG);
+			if(count($data["list"]) > config("public.up_number")){
+				throw new \Exception("Too many sub devices",config('exceptions.YUNLOT_UPINFO_ERROR'));
 			}
+			if($data["index"] == 0){//首页信息，则需要先清除所有子设备信息
+				logger("First to clear the child of the device[" . $pdevice["dev_mac"] . "]",DEBUG);
+				$childs = $this->deviceModel->getInfos(["pid" => $pdevice["dev_mac"]],"device");
+				if(!empty($childs)){
+					$childMacs = array_column($childs,"dev_mac");
+					$rs1 = $this->deviceModel->delete(["pid" => $pdevice["dev_mac"]],"device");
+					$rs2 = $this->deviceModel->delete(["dev_mac" => ["IN",$childMacs]],"device_params");
+					if(!$rs1 || !$rs2){
+						throw new \Exception("Clear child device failure",config("exceptions.MYSQL_EXEC_ERROR"));
+					}
+				}
+			}
+			$this->handChildData($data["list"],$toUid,$gid,$time,$pdevice);
+			logger("Handle all childs of the device[" . $pdevice["dev_mac"] . "] done",DEBUG);
+		}else{//增量上报
+			logger("Start handle increment childs of the device[" . $pdevice["dev_mac"] . "]",DEBUG);
+			if(isset($data["change"]) && !empty($data["change"])){
+				$this->handChildData($data["change"],$toUid,$gid,$time,$pdevice);
+			}
+			if(isset($data["delete"]) && !empty($data["delete"])){
+				$rs1 = $this->deviceModel->delete(["dev_mac" => ["IN",$data["delete"]]],"device");
+				$rs2 = $this->deviceModel->delete(["dev_mac" => ["IN",$data["delete"]]],"device_params");
+				if(!$rs1 || !$rs2){
+					throw new \Exception("Clear child device failure",config("exceptions.MYSQL_EXEC_ERROR"));
+				}
+			}
+			logger("Handle increment childs of the device[" . $pdevice["dev_mac"] . "] done",DEBUG);
+		}
+	}
+
+	private function handChildData($data,$toUid,$gid,$time,$pdevice){
+		foreach($data as $value){
+			$mac = $value["mac"];
+			unset($value["mac"]);
+			$device = $this->deviceModel->getDevices($mac);
+			$_device = !empty($device) ? $device : ["dev_mac" => $mac];
+			foreach ($value as $k => $v) {
+				logger("Start handle {$k} data of the device[" . $mac . "]",DEBUG);
+				switch ($k) {
+					case self::SYSTEM:
+						$this->handleSystem($device,$toUid,$gid,$v,$time,$pdevice["dev_mac"]);
+						break;
+					case self::NETWORK:
+						$this->handleNetwork($_device,$v,$time);
+						break;
+					case self::WIFI:
+						$this->handleWifi($_device,$v,$time);
+						break;
+					case self::USER:
+						$this->handleUser($_device,$v,$time);
+						break;
+					case self::TIMEREBOOT:
+						$this->handleReboot($_device,$v,$time);
+						break;
+					default:
+						# code...
+						break;
+				}
+				logger("Handle {$k} data of the device[" . $mac . "] done",DEBUG);
+			}			
 		}
 	}
 
@@ -328,6 +392,7 @@ class MqttService extends BaseService{
 			"status" => $data["status"],
 			"updated_at" => $time
 		],[
+			"dev_mac" => $device["dev_mac"],
 			"comm_id" => $data["commid"]
 		],"command");
 	}

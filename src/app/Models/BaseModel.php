@@ -113,12 +113,12 @@ class BaseModel extends Model{
     * @param string $table 需要指定的操作表
     * @return int 插入的记录数
     */
-    public function addAll($datas,$table=''){
+    public function addAll($datas,$table='',$replace = false){
         try{
 	        $this->beforeAdd();
 	        $field = implode('`,`',array_keys($datas[0]));
 	        $field = '`' . $field . '`';
-	        $sql = 'INSERT INTO ' . $this->getTable($table) . '(' . $field . ')VALUES';
+	        $sql = (true===$replace ? 'REPLACE' : 'INSERT') . ' INTO ' . $this->getTable($table) . '(' . $field . ')VALUES';
 	        foreach ($datas as $data) {
 	            $str = implode("','", $data);
 	            $sql .= "('" . $str . "'),";

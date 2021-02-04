@@ -3,16 +3,19 @@ namespace app\Controllers;
 
 use app\Controllers\Base;
 use app\Services\TestService;
+use app\Services\CacheService;
 
 class Test extends Base{
 	public $testModel;
 	public $tcpClient;
 
 	public $testService;
+	public $cacheService;
 
 	public function initialization($controllerName, $methodName){
 		parent::initialization($controllerName,$methodName);
 		$this->testService = $this->loader->model(TestService::class,$this);
+		$this->cacheService = $this->loader->model(CacheService::class,$this);
 		$this->tcpClient = get_instance()->getAsynPool("TCP_CLIENT");
 	}
 
@@ -31,6 +34,8 @@ class Test extends Base{
 
 	public function http_redis(){
 		$res = $this->testService->testRedis();
+		$rs = $this->cacheService->clearRegisterByPrtid(1);
+		var_dump($rs);
         $this->http_output->end($res);
 	}
 
@@ -63,6 +68,10 @@ class Test extends Base{
 
 	public function http_upinfo(){
 		$this->testService->upinfo();
+	}
+
+	public function http_mqtt(){
+		sendToMqtt(["aaa/bb/app2dev"],"123");
 	}
 
 }

@@ -15,6 +15,7 @@ use app\Utils\HashbindPool;
 use app\Utils\HashprtidsPool;
 use app\Utils\HashcltidsPool;
 use App\Services\CacheService;
+use app\Utils\YunlotPool;
 /**
 * Class DeviceUpReceiveProcess
 * @package app\Process
@@ -30,6 +31,7 @@ class DeviceUpReceiveProcess extends Process{
 	protected $bindPool;
 	protected $prtidPool;
 	protected $cltidPool;
+	protected $yunlotPool;
 
 	protected $cacheService;
 	/**
@@ -80,28 +82,35 @@ class DeviceUpReceiveProcess extends Process{
 				"message" => $message
 			];
 			logger("mqtt receive [" . json_encode($content) . "]",DEBUG);
+
 			try{
-				list($prtid,$cltid,$mac) = $this->getClientFromTopic($topic);
-				$data = [
-					"prtid" => $prtid,
-					"cltid" => $cltid,
-					"mac" => $mac,
-					"data" => $message
-				];
-				logger("save data[" . json_encode($data) . "]",DEBUG);
-				//消息去重
-				if($this->config->get("mqtt.qos") >= 1){
-					$msg = json_decode($message,true);
-					$msgID = $msg["header"]["mid"];
-					if(!$this->cacheService->get($this->redisPrefix . CacheService::MSG_MID . $msgID)){
+				//校验数据有效性
+				$this->yunlotPool->parse($message);
+				try{
+					list($prtid,$cltid,$mac) = $this->getClientFromTopic($topic);
+					$data = [
+						"prtid" => $prtid,
+						"cltid" => $cltid,
+						"mac" => $mac,
+						"data" => $message
+					];
+					logger("save data[" . json_encode($data) . "]",DEBUG);
+					//消息去重
+					if($this->config->get("mqtt.qos") >= 1){
+						$msg = json_decode($message,true);
+						$msgID = $msg["header"]["mid"];
+						if(!$this->cacheService->get($this->redisPrefix . CacheService::MSG_MID . $msgID)){
+							$this->receive($data);
+							$this->cacheService->setex($this->redisPrefix . CacheService::MSG_MID . $msgID,$this->config->get("public.cache.msgkeyttl"),$msgID);
+						}
+					}else{
 						$this->receive($data);
-						$this->cacheService->setex($this->redisPrefix . CacheService::MSG_MID . $msgID,$this->config->get("public.cache.msgkeyttl"),$msgID);
 					}
-				}else{
-					$this->receive($data);
+				}catch(\Exception $e){
+					logger($e->getMessage(),ERROR);
 				}
 			}catch(\Exception $e){
-				logger($e->getMessage(),ERROR);
+				logger("Discard the message,cause:" . $e->getMessage(),DEBUG);
 			}
 		});
 		
@@ -131,6 +140,7 @@ class DeviceUpReceiveProcess extends Process{
 		$this->bindPool = new HashbindPool($this->config);
 		$this->prtidPool = new HashprtidsPool($this->config);
 		$this->cltidPool = new HashcltidsPool($this->config);
+		get_instance()->addAsynPool("yunlotPool",new YunlotPool($this->config));
 		get_instance()->addAsynPool("redisPool", $this->redisPool);
 		get_instance()->addAsynPool("mysqlPool", $this->mysqlPool);
 		get_instance()->addAsynPool("bindPool",$this->bindPool);
@@ -138,6 +148,7 @@ class DeviceUpReceiveProcess extends Process{
 		get_instance()->addAsynPool("cltidPool",$this->cltidPool);
 		$this->db = get_instance()->getAsynPool('mysqlPool')->installDbBuilder();
 		$this->redis = get_instance()->getAsynPool('redisPool')->getCoroutine();
+		$this->yunlotPool = get_instance()->getAsynPool("yunlotPool")->init();
 	}
 
 	private function addServices(){

@@ -35,7 +35,7 @@ if(env('SELF_BUILD')){
     $domain = json_decode($data->domain,true);
 
     if(!$domain || !in_array($host,$domain)){
-        echo "\033[38;5;1m The license is invalid \n \033[0m";
+        echo "\033[38;5;1m The license is not support $host \n \033[0m";
         exit;
     }
 
